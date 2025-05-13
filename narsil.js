@@ -63,7 +63,8 @@ user_pref("security.OCSP.require", false);
 // New session
 user_pref("privacy.clearOnShutdown.sessions", true);  // Active Logins [DEFAULT: true]
 user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", false); // Cookies, Site Data, Active Logins [FF128+]
-
+// Dev tool
+user_pref("devtools.toolbox.host", "window");
 
 // -------------------------------------
 //
