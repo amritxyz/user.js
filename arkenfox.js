@@ -15,14 +15,14 @@
   3. If you skipped step 2, return to step 2
   4. Make changes in a user-overrides.js
        * There are often trade-offs and conflicts between security vs privacy vs anti-tracking
-         and these need to be balanced against functionality & convenience & breakage
+	 and these need to be balanced against functionality & convenience & breakage
        * Some site breakage and unintended consequences will happen. Everyone's experience will differ
-         e.g. some user data is erased on exit (section 2800), change this to suit your needs
+	 e.g. some user data is erased on exit (section 2800), change this to suit your needs
        * While not 100% definitive, search for "[SETUP" tags
   5. Some tag info
        [SETUP-SECURITY] it's one item, read it
-            [SETUP-WEB] can cause some websites to break
-         [SETUP-CHROME] changes how Firefox itself behaves (i.e. not directly website related)
+	    [SETUP-WEB] can cause some websites to break
+	 [SETUP-CHROME] changes how Firefox itself behaves (i.e. not directly website related)
   6. Override Recipes: https://github.com/arkenfox/user.js/issues/1080
 
 * RELEASES: https://github.com/arkenfox/user.js/releases
@@ -103,7 +103,7 @@ user_pref("browser.urlbar.recentsearches.featureGate", false);
 user_pref("browser.urlbar.clipboard.featureGate", false);
 // Password and other
 user_pref("signon.rememberSignons", false);
-user_pref("browser.sessionstore.max_tabs_undo", 0);
+user_pref("browser.sessionstore.max_tabs_undo", 10);
 user_pref("browser.sessionstore.resume_from_crash", false);
 // Disable Form Autofill
 user_pref("extensions.formautofill.addresses.enabled", false); // [FF55+]
@@ -561,9 +561,9 @@ user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
 user_pref("browser.xul.error_pages.expert_bad_cert", true);
 
 /*** [SECTION 1600]: REFERERS
-                  full URI: https://example.com:8888/foo/bar.html?id=1234
+		  full URI: https://example.com:8888/foo/bar.html?id=1234
      scheme+host+port+path: https://example.com:8888/foo/bar.html
-          scheme+host+port: https://example.com:8888
+	  scheme+host+port: https://example.com:8888
    [1] https://feeding.cloud.geek.nz/posts/tweaking-referrer-for-privacy-in-firefox/
 ***/
 user_pref("_user.js.parrot", "1600 syntax error: the parrot rests in peace!");
