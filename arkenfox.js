@@ -103,7 +103,7 @@ user_pref("browser.urlbar.recentsearches.featureGate", false);
 user_pref("browser.urlbar.clipboard.featureGate", false);
 // Password and other
 user_pref("signon.rememberSignons", false);
-user_pref("browser.sessionstore.max_tabs_undo", 10);
+user_pref("browser.sessionstore.max_tabs_undo", 0);
 user_pref("browser.sessionstore.resume_from_crash", false);
 // Disable Form Autofill
 user_pref("extensions.formautofill.addresses.enabled", false); // [FF55+]
