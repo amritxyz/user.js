@@ -103,7 +103,7 @@ user_pref("browser.urlbar.recentsearches.featureGate", false);
 user_pref("browser.urlbar.clipboard.featureGate", false);
 // Password and other
 user_pref("signon.rememberSignons", false);
-user_pref("browser.sessionstore.max_tabs_undo", 0);
+user_pref("browser.sessionstore.max_tabs_undo", 10);
 user_pref("browser.sessionstore.resume_from_crash", false);
 // Disable Form Autofill
 user_pref("extensions.formautofill.addresses.enabled", false); // [FF55+]
@@ -111,7 +111,7 @@ user_pref("extensions.formautofill.creditCards.enabled", false); // [FF56+]
 user_pref("security.OCSP.enabled", 0); // [DEFAULT: 1]
 user_pref("security.OCSP.require", false);
 // New session
-user_pref("privacy.clearOnShutdown.sessions", true);  // Active Logins [DEFAULT: true]
+user_pref("privacy.clearOnShutdown.sessions", false);  // Active Logins [DEFAULT: true]
 user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", false); // Cookies, Site Data, Active Logins [FF128+]
 
 
