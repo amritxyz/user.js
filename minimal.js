@@ -236,3 +236,6 @@ user_pref("browser.urlbar.showSearchTerms.enabled", false);
 user_pref("browser.ml.chat.enabled", false);
 user_pref("browser.ml.chat.shortcuts", false);
 user_pref("browser.ml.chat.sidebar", false);
+
+/** Video Acceleration **/
+user_pref("gfx.webrender.all", true);
