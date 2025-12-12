@@ -20,6 +20,25 @@ user_pref("network.http.request.max-start-delay", 5);
 user_pref("network.dnsCacheEntries", 2000);
 user_pref("network.dnsCacheExpiration", 900);
 
+
+/** LOCATION BAR / SEARCH BAR / SUGGESTIONS / HISTORY / FORMS ***/
+user_pref("browser.urlbar.quicksuggest.enabled", false); // [FF92+]
+user_pref("browser.urlbar.suggest.quicksuggest.nonsponsored", false); // [FF95+]
+user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false); // [FF92+]
+user_pref("browser.search.suggest.enabled", false);
+user_pref("browser.urlbar.suggest.searches", false);
+user_pref("browser.urlbar.trending.featureGate", false);
+user_pref("browser.urlbar.addons.featureGate", false); // [FF115+]
+user_pref("browser.urlbar.fakespot.featureGate", false); // [FF130+] [DEFAULT: false]
+user_pref("browser.urlbar.mdn.featureGate", false); // [FF117+] [HIDDEN PREF]
+user_pref("browser.urlbar.pocket.featureGate", false); // [FF116+] [DEFAULT: false]
+user_pref("browser.urlbar.weather.featureGate", false); // [FF108+] [DEFAULT: false]
+user_pref("browser.urlbar.yelp.featureGate", false); // [FF124+]
+user_pref("browser.urlbar.showSearchTerms.enabled", false);
+user_pref("browser.formfill.enable", false);
+user_pref("browser.search.separatePrivateDefault", true); // [FF70+]
+user_pref("browser.search.separatePrivateDefault.ui.enabled", true); // [FF71+]
+
 /** Speculative Connections OFF **/
 user_pref("browser.urlbar.speculativeConnect.enabled", false);
 user_pref("browser.places.speculativeConnect.enabled", false);
@@ -60,6 +79,12 @@ user_pref("browser.newtabpage.activity-stream.showSearch", false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeBookmarks", false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeDownloads", false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includeVisited", false);
+user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
+user_pref("browser.newtabpage.activity-stream.showMosaicOptOut", true);
+user_pref("browser.newtabpage.activity-stream.supportUrl", "");
+user_pref("browser.newtabpage.activity-stream.showSponsored", false);
+user_pref("browser.urlbar.recentsearches.featureGate", false);
+user_pref("browser.urlbar.clipboard.featureGate", false);
 
 /** Disable ML/AI/Chat **/
 user_pref("browser.ml.chat.enabled", false);
@@ -73,14 +98,17 @@ user_pref("extensions.pocket.enabled", false);
 user_pref("identity.fxaccounts.enabled", false);
 
 /** Disable Search Suggestions / URL Bar bloat **/
-user_pref("browser.search.suggest.enabled", false);
-user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.urlbar.suggest.history", false);
 user_pref("browser.urlbar.suggest.bookmark", false);
-user_pref("browser.urlbar.suggest.topsites", false);
+user_pref("browser.urlbar.suggest.openpage", false);
+user_pref("browser.urlbar.suggest.topsites", false); // [FF78+]
 user_pref("browser.urlbar.suggest.weather", false);
+user_pref("browser.urlbar.suggest.engines", false);
+user_pref("browser.urlbar.suggest.quickactions", false);
 user_pref("browser.urlbar.shortcuts.bookmarks", false);
 user_pref("browser.urlbar.shortcuts.history", false);
+user_pref("browser.urlbar.shortcuts.tabs", false);
+user_pref("browser.urlbar.shortcuts.actions", false);
 
 /** Disable Form Autofill **/
 user_pref("extensions.formautofill.addresses.enabled", false);
@@ -92,18 +120,31 @@ user_pref("signon.autofillForms", false);
 
 /** Disable Normandy / Recommendations **/
 user_pref("browser.discovery.enabled", false);
-user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("app.normandy.enabled", false);
 user_pref("app.normandy.api_url", "");
+user_pref("extensions.getAddons.showPane", false); // [HIDDEN PREF]
+user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
+user_pref("browser.shopping.experience2023.enabled", false); // [DEFAULT: false]
 
 /** Disable Telemetry **/
-user_pref("toolkit.telemetry.unified", false);
 user_pref("toolkit.telemetry.enabled", false);
+user_pref("toolkit.telemetry.unified", false);
 user_pref("toolkit.telemetry.archive.enabled", false);
+user_pref("toolkit.telemetry.server", "");
+user_pref("toolkit.telemetry.newProfilePing.enabled", false); // [FF55+]
+user_pref("toolkit.telemetry.shutdownPingSender.enabled", false); // [FF55+]
+user_pref("toolkit.telemetry.updatePing.enabled", false); // [FF56+]
+user_pref("toolkit.telemetry.bhrPing.enabled", false); // [FF57+] Background Hang Reporter
+user_pref("toolkit.telemetry.firstShutdownPing.enabled", false); // [FF57+]
+user_pref("toolkit.telemetry.coverage.opt-out", true); // [HIDDEN PREF]
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("app.shield.optoutstudies.enabled", false);
+
+/** Reporting **/
+user_pref("browser.tabs.crashReporting.sendReport", false); // [FF44+]
+user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false); // [DEFAULT: false]
 
 /** Disable Safe Browsing Remote Checks (keep local protections) **/
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
