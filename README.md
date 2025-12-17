@@ -2,7 +2,7 @@
 
 **Arkenfox.js**
 ```bash
-wget -q --show-progress -O arkenfox.js https://raw.githubusercontent.com/amritxyz/user.js/refs/heads/main/arkenfox.js
+wget -q --show-progress -O arkenfox.js https://codeberg.org/amritxyz/user.js/raw/branch/main/arkenfox.js
 ```
 
 ---
@@ -10,5 +10,5 @@ wget -q --show-progress -O arkenfox.js https://raw.githubusercontent.com/amritxy
 **Narsil.js**
 
 ```bash
-wget -q --show-progress -O arkenfox.js https://raw.githubusercontent.com/amritxyz/user.js/refs/heads/main/narsil.js
+wget -q --show-progress -O arkenfox.js https://codeberg.org/amritxyz/user.js/raw/branch/main/narsil.js
 ```
