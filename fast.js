@@ -67,7 +67,7 @@ user_pref("browser.sessionstore.max_tabs_undo", 10);
 /*** DEBLOAT & DISABLE CRAP **************************************/
 
 /** UI Crap **/
-user_pref("browser.uidensity", 1);
+user_pref("browser.uidensity", 2);
 user_pref("browser.tabs.firefox-view", false);
 user_pref("browser.chrome.site_icons", false);
 
@@ -175,3 +175,18 @@ user_pref("browser.download.alwaysOpenPanel", false);
 user_pref("browser.startup.page", 0);
 user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.aboutConfig.showWarning", false);
+
+
+/*** Web content font scaling ***************************************************/
+/* Variable-width (web text) */
+user_pref("font.size.variable.x-western", 17);
+/* Monospace (code blocks, devtools, web terminals) */
+user_pref("font.size.fixed.x-western", 15);
+/* Minimum readable size */
+user_pref("font.minimum-size.x-western", 14);
+/* Allow website fonts */
+user_pref("browser.display.use_document_fonts", 1);
+/* Keep site-specific zoom */
+user_pref("browser.zoom.siteSpecific", true);
+/* Global UI + font scaling */
+user_pref("layout.css.devPixelsPerPx", "1.15");
