@@ -179,14 +179,14 @@ user_pref("browser.aboutConfig.showWarning", false);
 
 /*** Web content font scaling ***************************************************/
 /* Variable-width (web text) */
-user_pref("font.size.variable.x-western", 17);
+user_pref("font.size.variable.x-western", 18);
 /* Monospace (code blocks, devtools, web terminals) */
-user_pref("font.size.fixed.x-western", 15);
+user_pref("font.size.fixed.x-western", 16);
 /* Minimum readable size */
-user_pref("font.minimum-size.x-western", 14);
+user_pref("font.minimum-size.x-western", 15);
 /* Allow website fonts */
 user_pref("browser.display.use_document_fonts", 1);
 /* Keep site-specific zoom */
 user_pref("browser.zoom.siteSpecific", true);
 /* Global UI + font scaling */
-user_pref("layout.css.devPixelsPerPx", "1.15");
+user_pref("layout.css.devPixelsPerPx", "1.10");
