@@ -169,6 +169,8 @@ user_pref("security.cert_pinning.enforcement_level", 2);
 /*** DOWNLOADS ****************************************************/
 user_pref("browser.download.useDownloadDir", false);
 user_pref("browser.download.alwaysOpenPanel", false);
+user_pref("browser.download.manager.addToRecentDocs", false);
+user_pref("browser.download.always_ask_before_handling_new_types", true);
 
 
 /*** FINAL MISC ***************************************************/
